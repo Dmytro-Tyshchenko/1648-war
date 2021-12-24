@@ -1,0 +1,7 @@
+.child-icon {
+  width: 16px;
+  height: 12px;
+  margin: 0;
+  margin-right: 10px;
+  fill: var(--paragraph-text-color);
+}
