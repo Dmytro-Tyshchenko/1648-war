@@ -103,26 +103,42 @@
   justify-content: center;
 }
 
-form {
-  display: inline-flex;
-  flex-direction: row;
-}
-.box {
+.container {
   display: flex;
-  flex-direction: column;
 }
-/* input {
-  padding: 8px;
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--input-text-color);
+.li-box {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.svg-margin {
+  margin-right: 16px;
+}
+.text {
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 
-label {
-  margin-bottom: 8px;
-  font-size: 14px;
-  line-height: 1.5;
+input {
+  border: 1px solid blue;
+}
+input:focus {
+  outline: none;
+  border: 1px solid red;
+}
 
-  color: var(--paragraph-color-primary);
-} */
+.box {
+  margin-left: 50px;
+  width: 20px;
+  height: 20px;
+  background-color: brown;
+}
+.box::after {
+  contain: "";
+  margin-right: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons.svg#icon-smartphone);
+}
